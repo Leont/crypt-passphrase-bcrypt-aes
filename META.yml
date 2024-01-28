@@ -1,8 +1,10 @@
 ---
-abstract: 'INSERT YOUR ABSTRACT HERE'
+abstract: 'A peppered AES-encrypted Bcrypt encoder for Crypt::Passphrase'
 author:
   - 'Leon Timmermans <fawaka@gmail.com>'
-build_requires: {}
+build_requires:
+  Test::More: '0'
+  strict: '0'
 configure_requires:
   Module::Build::Tiny: '0.039'
 dynamic_config: 0
@@ -17,7 +19,12 @@ provides:
     file: lib/Crypt/Passphrase/Bcrypt/AES.pm
     version: '0.000'
 requires:
-  strict: '0'
+  Carp: '0'
+  Crypt::Passphrase: '0.019'
+  Crypt::Passphrase::Bcrypt::Encrypted: '0'
+  Crypt::Rijndael: '1.16'
+  parent: '0'
+  perl: '5.014'
   warnings: '0'
 version: '0.000'
 x_serialization_backend: 'CPAN::Meta::YAML version 0.018'
