@@ -1,5 +1,7 @@
 Revision history for Crypt-Passphrase-Bcrypt-AES
 
+          - Add support for aes-cbc-pad and aes-ecb-pad
+
 0.001     2024-01-28 19:13:11+0100
           - Initial release to an unsuspecting world
 
