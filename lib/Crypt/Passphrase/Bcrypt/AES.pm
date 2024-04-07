@@ -3,7 +3,7 @@ package Crypt::Passphrase::Bcrypt::AES;
 use 5.014;
 use warnings;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 use parent 'Crypt::Passphrase::Bcrypt::Encrypted';
 use Crypt::Passphrase 0.019 -encoder;
