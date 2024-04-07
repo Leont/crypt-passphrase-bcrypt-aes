@@ -87,7 +87,7 @@ This module takes all arguments also taken by L<Crypt::Passphrase::Bcrypt|Crypt:
 
 =item * peppers
 
-This is a map of identifier to pepper value. The identifiers should be (probably small) numbers, the values should be random binary strings that must be either 16, 24 or 32 bytes long.
+This is a map of identifier to pepper value. The identifiers should be (probably small) numbers, the values should be random binary strings that must be either 16, 24 or 32 bytes long. This argument is mandatory.
 
 =item * active
 
@@ -99,9 +99,11 @@ This is the mode that will be used with C<AES>. Values values are C<'cfb'>, C<'o
 
 =back
 
+The C<hash> parameter will default to C<'sha384'>.
+
 =head2 Supported crypt types
 
-This supports any sequence of <bcrypt->, C<(sha256 | sha385 | sha512)>, -encrypted-aes-, C<(ctr | cfb | ofb)>. E.g. C<bcrypt-sha384-encrypted-aes-ctr>
+This supports any sequence of C<bcrypt->, C<(sha256 | sha385 | sha512)>, C<-encrypted-aes->, C<(ctr | cfb | ofb)>. E.g. C<bcrypt-sha384-encrypted-aes-ctr>
 
 =head1 AUTHOR
 
